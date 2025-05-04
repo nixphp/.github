@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://nixphp.github.io/docs/assets/nixphp-logo-small.png" alt="NixPHP Logo" width="160">
+  <img src="https://nixphp.github.io/docs/assets/nixphp-logo-small-square.png" alt="NixPHP Logo" width="160">
 </p>
 
 <p align="center">
