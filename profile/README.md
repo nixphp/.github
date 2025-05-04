@@ -1,0 +1,55 @@
+<p align="center">
+  <img src="https://nixphp.github.io/docs/assets/nixphp-logo-small.png" alt="NixPHP Logo" width="160">
+</p>
+
+<p align="center">
+  <strong>Minimal. Extendable. Just what you need.</strong><br>
+  A lightweight PHP microframework designed to stay out of your way.<br>
+  <em>As simple as possible, as flexible as necessary.</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/nixphp/framework"><img alt="Framework" src="https://img.shields.io/badge/Core_Framework-nixphp%2Fframework-blue?style=flat-square"></a>
+  <a href="https://nixphp.github.io/docs"><img alt="Docs" src="https://img.shields.io/badge/Docs-View_on_GitHub_Pages-brightgreen?style=flat-square"></a>
+</p>
+
+---
+
+## 🔧 What is NixPHP?
+
+**NixPHP** is a microframework for developers who want **full control** over their stack —  
+with only the essentials included, and everything else available via plugins.
+
+It comes with:
+
+- PSR-based architecture (PSR-3, PSR-4, PSR-7, PSR-11, PSR-18)
+- Minimalist routing and dispatching
+- Plugin system for optional components (views, forms, sessions, DB, etc.)
+- Native PHP approach — no complex abstraction layers
+
+📦 *Use what you need. Leave out what you don’t.*
+
+---
+
+## 🧩 Official Plugins
+
+| Plugin             | Description                                 |
+|--------------------|---------------------------------------------|
+| [`nixphp/view`](https://github.com/nixphp/view)         | Native PHP templating with layout blocks |
+| [`nixphp/form`](https://github.com/nixphp/form)         | CSRF protection + form input memory     |
+| [`nixphp/session`](https://github.com/nixphp/session)   | Session and flash message support       |
+| [`nixphp/database`](https://github.com/nixphp/database) | PDO database connection helper          |
+| ...more coming soon...                                    | Logging, HTTP client, CLI, Mail, etc.   |
+
+---
+
+## 📚 Documentation
+
+📘 Read the full docs at **[nixphp.github.io/docs](https://nixphp.github.io/docs)**
+
+---
+
+## 🚀 Get started
+
+```bash
+composer create-project nixphp/app my-app
