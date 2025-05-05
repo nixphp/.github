@@ -13,6 +13,16 @@
   <a href="https://nixphp.github.io/docs"><img alt="Docs" src="https://img.shields.io/badge/Docs-View_on_GitHub_Pages-brightgreen?style=flat-square"></a>
 </p>
 
+<div align="center" style="text-align: center;">
+
+![Commits](https://img.shields.io/github/commit-activity/m/nixphp/framework)
+![Last Commit](https://img.shields.io/github/last-commit/nixphp/framework)
+
+![Open Issues](https://img.shields.io/github/issues/nixphp/framework)
+![Open Pull Requests](https://img.shields.io/github/issues-pr/nixphp/framework)
+
+</div>
+
 ---
 
 ## 🔧 What is NixPHP?
