@@ -52,7 +52,8 @@ It comes with:
 | [`nixphp/orm`](https://github.com/nixphp/orm)           | PDO object mapping for entities          |
 | [`nixphp/i18n`](https://github.com/nixphp/i18n)         | Internationalization for your project    |
 | [`nixphp/cli`](https://github.com/nixphp/cli)           | CLI applications and helpers             |
-| ...more coming soon...                                  | Mail, Auth, Firewall, etc.               |
+ | [`nixphp/mail`](https://github.com/nixphp/mail)         | Send emails with attachments             |
+| ...more coming soon...                                  | Auth, Firewall, Queuing System, etc.     |
 
 ---
 
