@@ -15,11 +15,11 @@
 
 <div align="center" style="text-align: center;">
 
-![Commits](https://img.shields.io/github/commit-activity/m/nixphp/framework)
-![Last Commit](https://img.shields.io/github/last-commit/nixphp/framework)
+<!-- ![Commits](https://img.shields.io/github/commit-activity/m/nixphp/framework) -->
+<!-- ![Last Commit](https://img.shields.io/github/last-commit/nixphp/framework) -->
 
-![Open Issues](https://img.shields.io/github/issues/nixphp/framework)
-![Open Pull Requests](https://img.shields.io/github/issues-pr/nixphp/framework)
+<!-- ![Open Issues](https://img.shields.io/github/issues/nixphp/framework) -->
+<!-- ![Open Pull Requests](https://img.shields.io/github/issues-pr/nixphp/framework) -->
 
 </div>
 
@@ -53,6 +53,7 @@ It comes with:
 | [`nixphp/i18n`](https://github.com/nixphp/i18n)         | Internationalization for your project    |
 | [`nixphp/cli`](https://github.com/nixphp/cli)           | CLI applications and helpers             |
  | [`nixphp/mail`](https://github.com/nixphp/mail)         | Send emails with attachments             |
+ | [`nixphp/client`](https://github.com/nixphp/client)     | Make simple HTTP requests                |
 | ...more coming soon...                                  | Auth, Firewall, Queuing System, etc.     |
 
 ---
