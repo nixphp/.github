@@ -1,73 +1,48 @@
 <p align="center">
-  <img src="https://nixphp.github.io/docs/assets/nixphp-logo-small-square.png" alt="NixPHP Logo" width="160">
+  <img src="https://nafphp.github.io/docs/assets/naf-logo-small-square.png" alt="NAF" width="160">
 </p>
 
 <p align="center">
-  <strong>Minimal. Extendable. Just what you need.</strong><br>
-  A lightweight PHP microframework designed to stay out of your way.<br>
-  <em>As simple as possible, as flexible as necessary.</em>
+  <strong>NixPHP is now NAF — “Not Another Framework”.</strong><br>
+  Everything here has moved to <a href="https://github.com/nafphp">github.com/nafphp</a>.
 </p>
 
-<p align="center">
-  <a href="https://github.com/nixphp/framework"><img alt="Framework" src="https://img.shields.io/badge/Core_Framework-nixphp%2Fframework-blue?style=flat-square"></a>
-  <a href="https://nixphp.github.io/docs"><img alt="Docs" src="https://img.shields.io/badge/Docs-View_on_GitHub_Pages-brightgreen?style=flat-square"></a>
-</p>
-
-<div align="center" style="text-align: center;">
-
-<!-- ![Commits](https://img.shields.io/github/commit-activity/m/nixphp/framework) -->
-<!-- ![Last Commit](https://img.shields.io/github/last-commit/nixphp/framework) -->
-
-<!-- ![Open Issues](https://img.shields.io/github/issues/nixphp/framework) -->
-<!-- ![Open Pull Requests](https://img.shields.io/github/issues-pr/nixphp/framework) -->
-
-</div>
-
 ---
 
-## 🔧 What is NixPHP?
+## Why
 
-**NixPHP** is a microframework for developers who want **full control** over their stack.  
-With only the essentials included, and everything else available via plugins.
+The old name collided with [NixOS](https://nixos.org) — in search results, in conversation,
+and most concretely in the shell, where the CLI binary was literally `nix` and could not be
+called at all on a machine that had Nix installed.
 
-It comes with:
+## What moved where
 
-- PSR-based architecture (PSR-3, PSR-4, PSR-7, PSR-11, PSR-18)
-- Minimalist routing and dispatching
-- Plugin system for optional components (views, forms, sessions, DB, etc.)
-- Native PHP approach, no complex abstraction layers
+| | |
+| --- | --- |
+| Composer vendor | `nixphp/…` → `naf/…` |
+| GitHub organisation | `nixphp` → [`nafphp`](https://github.com/nafphp) |
+| PHP namespace | `NixPHP\` → `Naf\` |
+| Plugin package type | `nixphp-plugin` → `naf-plugin` |
+| CLI binary | `nix` → `naf` |
+| Documentation | [nafphp.github.io/docs](https://nafphp.github.io/docs/) |
 
-📦 *Use what you need. Leave out what you don’t.*
+A plugin still declaring `nixphp-plugin` is **not loaded** by NAF — silently, with no error.
+The [upgrade guide](https://nafphp.github.io/docs/upgrading-from-nixphp/) covers the whole
+move in one page, including a `sed` line for the namespace.
 
----
+## The packages
 
-## 🧩 Official Plugins
-
-| Plugin                                                  | Description                               |
-|---------------------------------------------------------|-------------------------------------------|
-| [`nixphp/view`](https://github.com/nixphp/view)         | Native PHP templating with layout blocks  |
-| [`nixphp/form`](https://github.com/nixphp/form)         | CSRF protection + form input memory       |
-| [`nixphp/session`](https://github.com/nixphp/session)   | Session and flash message support         |
-| [`nixphp/database`](https://github.com/nixphp/database) | PDO database connection helper            |
-| [`nixphp/orm`](https://github.com/nixphp/orm)           | PDO object mapping for entities           |
-| [`nixphp/i18n`](https://github.com/nixphp/i18n)         | Internationalization for your project     |
-| [`nixphp/cli`](https://github.com/nixphp/cli)           | CLI applications and helpers              |
- | [`nixphp/mail`](https://github.com/nixphp/mail)         | Send emails with attachments              |
- | [`nixphp/client`](https://github.com/nixphp/client)     | Make simple HTTP requests                 |
- | [`nixphp/queue`](https://github.com/nixphp/queue)       | Queueing system for asynchronous tasks    |
-| [`nixphp/schedule`](https://github.com/nixphp/schedule) | Define recurring tasks with cron syntax   |
-| [`nixphp/mcp`](https://github.com/nixphp/mcp)           | Let AI agents connect to your application |
-| ...more coming soon...                                  | Primitive CMS, OAuth2, etc.               |
-
----
-
-## 📚 Documentation
-
-📘 Read the full docs at **[nixphp.github.io/docs](https://nixphp.github.io/docs)**
-
----
-
-## 🚀 Get started
+`naf/framework`, and the plugins around it: `view`, `form`, `session`, `database`, `orm`,
+`i18n`, `cli`, `mail`, `client`, `queue`, `schedule`, `auth`, `oauth-client`, `oauth-server`
+and `mcp`. Start with
+**[What do I actually need?](https://nafphp.github.io/docs/choosing-packages/)**
 
 ```bash
-composer create-project nixphp/app my-app
+composer create-project naf/app my-app
+```
+
+## This organisation
+
+Every repository here is archived and read-only. The `nixphp/*` packages stay on Packagist so
+existing installations keep working, and they receive no further releases. The old
+documentation site has been retired.
